@@ -90,6 +90,8 @@
 
 	&__logo-link {
 		margin: auto 0;
+		pointer-events: none;
+		user-select: none;
 	}
 	// .header__middle
 
@@ -213,7 +215,7 @@
 		transition-duration: 0.5s;
 		//background: linear-gradient(#ffffff, #e9c600);
 		box-shadow: 0px 0px 60px 18px rgba(233, 198, 0, 0.589);
-		padding-top: 3px;
+		//padding-top: 3px;
 	}
 
 	// .header__button-text
@@ -401,7 +403,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		display: none !important;
 	}
 	.menu__icon {
-		z-index: 5;
+		z-index: 22;
 		display: block;
 		position: relative;
 		width: 75px;
@@ -465,7 +467,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 	.menu__body._active {
 		left: 0;
-		z-index: 2;
+		z-index: 20;
 	}
 
 	.menu__body::before {
