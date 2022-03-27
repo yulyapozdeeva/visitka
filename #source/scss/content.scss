@@ -1135,14 +1135,14 @@
 			top: 98%;
 		}
 		@media (max-width: 715px) {
-		top: 99%;
-		left: 25%;
-		max-width: 50px;
+			top: 99%;
+			left: 25%;
+			max-width: 50px;
 		}
 		@media (max-width: 495px) {
 			top: 99%;
 			left: 55%;
-			}
+		}
 		// @media (max-width: 992px) {
 		// 	max-width: 60px;
 		// 	left: 7%;
@@ -1327,7 +1327,7 @@
 		opacity: 0;
 	}
 
-	&__text._active{
+	&__text._active {
 		opacity: 1;
 		transform: translate(0px, 0px);
 	}
