@@ -45,11 +45,47 @@ body {
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
+	//position: relative;
 	&.loaded {
 	}
 }
 //</ОБОЛОЧКА>===========================================================================================================
+.arrow{
+	position: fixed;
+	z-index: 13;
+	left: 92%;
+	top: 85%;
+	//max-width: px;
+	display: none;
+	opacity: 0.91;
+	transition-duration: 1s;
+	//min-width: calc(20px + (40 - 20) * (100vw / 1600));
+	max-width: 70px;
+	@media(max-width:1226px){
+		left: 90%;
+	}
+	@media(max-width:992px){
+		left: 88%;
+		max-width: 60px;
+	}
+	@media(max-width:636px){
+		left: 88%;
+		max-width: 50px;
+	}
+	@media(max-width:477px){
+		left: 88%;
+		max-width: 40px;
+	}
+	@media(max-width:372px){
+		left: 85%;
+		max-width: 40px;
+	}
+}
 
+.arrow:hover{
+//	transition-duration: 0.5s;
+	//max-width: 75px;
+}
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 .container {
 	max-width: $mw + px;

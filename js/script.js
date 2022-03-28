@@ -572,3 +572,28 @@ let myImageSlider3 = new Swiper('.image-slider-3', {
 	observeSlideChildren: true,
 });
 
+$(document).ready(function () {
+	$(window).scroll(function () {
+		/*если прокрутка больше 300 показ. кнопку*/
+		if ($(this).scrollTop() > 700) {
+			$('.arrow, .alert').fadeIn();
+			/*если нет то скрываем кнопку*/
+		} else {
+			$('.arrow, .alert').fadeOut();
+		}
+	});
+	/*при клике по кнопке переходим вверх стр.*/
+	$('.arrow').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 700);
+		return false;
+	});
+});
+
+$('a[href*="#"]').on('click', function () {
+	$('html, body').animate({
+		scrollTop: $($.attr(this, 'href')).offset().top
+	}, 1400);
+	return false;
+});
