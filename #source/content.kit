@@ -330,13 +330,13 @@
 				<div class="connection__form form">
 					<div class="form__form-wrapper">
 						<div class="form__text-container">
-							<div class="form__text _anim-items">Хочешь узнать подробнее о моих услугах, заказать дизайн или
+							<div class="form__text _anim-items">Хотели бы узнать подробнее о моих услугах, заказать дизайн или
 								разработку
 								сайта?
 							</div>
-							<div class="form__text-difference">Отправь мне свою заявку!</div>
+							<div class="form__text-difference">Отправьте мне свою заявку!</div>
 						</div>
-						<form action="#" class="form__body" id="form">
+						<form method="post" action="#" class="form__body" id="form">
 							<div class="form__item-contacts">
 								<div class="form__item">
 									<input type="text" id="formName" class="form__input" required name="name"
@@ -351,8 +351,9 @@
 								<textarea id="fornMessage" class="form__input form__message" required
 									placeholder="Ваше сообщение" name="message"></textarea>
 							</div>
-							<a href="" class="form__button">
-								<span class="form__button-text">Отправить</span>
+							<a href="" class="form__button-link">
+								<!-- <span class="form__button-text">Отправить</span> -->
+								<input value="Отправить" type="submit" class="form__button form__button-text">
 							</a>
 						</form>
 					</div>

@@ -410,6 +410,11 @@ body._touch .menu__list > li._active .menu__arrow {
 		height: 35px;
 		cursor: pointer;
 		margin: 35px;
+		//position: fixed;
+	}
+
+	.menu__icon._active{
+		position: fixed;
 	}
 	.menu__icon span,
 	.menu__icon::before,
@@ -537,3 +542,4 @@ body._touch .menu__list > li._active .menu__arrow {
 		color: #000;
 	}
 }
+

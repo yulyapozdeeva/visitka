@@ -504,6 +504,9 @@ body._touch .menu__list > li._active .menu__arrow {
     cursor: pointer;
     margin: 35px;
   }
+  .menu__icon._active {
+    position: fixed;
+  }
   .menu__icon span,
   .menu__icon::before,
   .menu__icon::after {

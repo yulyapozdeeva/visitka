@@ -687,70 +687,142 @@ body.ie .ibg img {
   top: 18px !important; }
 
 .popup {
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-  position: fixed !important;
-  top: 0px;
-  left: 0;
+  position: fixed;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  z-index: 100; }
-  .popup.active .popup-content {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); }
-  .popup.show {
-    display: block; }
-    .popup.show .popup-content {
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -webkit-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1); }
-
-.popup-table {
-  height: 100%;
-  table-layout: fixed; }
-  .popup-table > .cell {
-    height: 100%;
-    vertical-align: middle;
-    padding: 30px 10px; }
-
-.popup-content {
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  position: relative;
-  max-width: 1230px;
-  margin: 0px auto;
-  background-color: #fff; }
-
-.popup-close {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  cursor: pointer;
-  background: url("../img/icons/close.png") 0 0 no-repeat; }
-
-.popup-video .popup-close {
-  width: 40px;
-  height: 40px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
-  right: 0; }
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  z-index: 40;
+  overflow: auto; }
+
+.popup.open {
+  opacity: 1;
+  visibility: visible; }
+
+.popup.open .popup__content {
+  -webkit-transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1; }
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.popup__content {
+  background-color: #0000;
+  max-width: none;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  max-height: 600px; }
+
+.popup__content_image {
+  padding: 0; }
+
+.popup__image img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none; }
+
+.popup__title {
+  font-size: 40px;
+  margin: 0px 0px 1em 0px; }
+
+.form__form-popup {
+  padding-top: 0px; }
+
+.form__text-popup {
+  margin-bottom: 10px;
+  opacity: 1;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  text-align: center; }
+
+.form__text-difference-popup {
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: calc(16px + (25 - 16) * (100vw / 1600)); }
+
+.form__message-popup {
+  min-width: 100%; }
+  @media (max-width: 992px) {
+    .form__message-popup {
+      min-width: 50%; } }
+  @media (max-width: 830px) {
+    .form__message-popup {
+      min-width: 100%; } }
+
+@media (max-width: 992px) {
+  .form__input-popup {
+    min-width: 50%; } }
+
+@media (max-width: 830px) {
+  .form__input-popup {
+    min-width: 100%; } }
+
+@media (max-width: 992px) {
+  .form__item-popup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media (max-width: 992px) {
+  .form__button-popup {
+    min-width: 100% !important;
+    margin: 0 auto; } }
+
+@media (max-width: 830px) {
+  .form__button-popup {
+    min-width: 100% !important; } }
+
+.form__text-container-popup {
+  min-height: 0px; }
 
 .header-container {
   display: -webkit-box;
@@ -1171,6 +1243,8 @@ body._touch .menu__list > li._active .menu__arrow {
     height: 35px;
     cursor: pointer;
     margin: 35px; }
+  .menu__icon._active {
+    position: fixed; }
   .menu__icon span,
   .menu__icon::before,
   .menu__icon::after {
