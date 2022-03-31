@@ -91,8 +91,8 @@
 
 @media (max-width: 830px) {
   .popup__close {
-    right: 0px;
-    top: -35px;
+    right: 45%;
+    top: 50px;
   }
 }
 
@@ -134,6 +134,8 @@
 @media (max-width: 830px) {
   .form__message-popup {
     min-width: 100% !important;
+    min-height: 50px;
+    font-size: 16px;
   }
 }
 
@@ -146,6 +148,8 @@
 @media (max-width: 830px) {
   .form__input-popup {
     min-width: 100%;
+    max-height: 40px;
+    font-size: 16px;
   }
 }
 
@@ -170,10 +174,15 @@
 @media (max-width: 830px) {
   .form__button-popup {
     min-width: 100% !important;
+    min-height: 50px;
   }
 }
 
 .form__text-container-popup {
   min-height: 0px;
-  margin-top: 10px;
+  padding-top: 90px;
+}
+
+.form__body-popup {
+  min-height: auto;
 }
