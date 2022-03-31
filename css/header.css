@@ -55,6 +55,7 @@
 @media (max-width: 1182px) {
   .header__menu {
     margin: 0px 0px 30px 0px;
+    margin: 0 auto;
   }
 }
 
@@ -184,9 +185,15 @@
   }
 }
 
+@media (max-width: 338px) {
+  .header__right {
+    min-height: 270px;
+  }
+}
+
 .header__heading {
   color: #e9c700;
-  font-size: calc(16px + (45 - 16) * (100vw / 1600));
+  font-size: calc(15px + (45 - 15) * (100vw / 1600));
   line-height: 150%;
   font-weight: 700;
   letter-spacing: 5px;
@@ -254,6 +261,12 @@
   }
 }
 
+@media (max-width: 338px) {
+  .header__button {
+    min-width: 220px;
+  }
+}
+
 .header__button._active {
   opacity: 1;
   -webkit-transform: translate(0px, 0px);
@@ -298,6 +311,12 @@
 @media (max-width: 596px) {
   .header__photo {
     max-width: 300px;
+  }
+}
+
+@media (max-width: 338px) {
+  .header__photo {
+    max-width: 250px;
   }
 }
 
@@ -504,6 +523,15 @@ body._touch .menu__list > li._active .menu__arrow {
     cursor: pointer;
     margin: 35px;
   }
+}
+
+@media (max-width: 1182px) and (max-width: 321px) {
+  .menu__icon {
+    margin: 35px auto;
+  }
+}
+
+@media (max-width: 1182px) {
   .menu__icon._active {
     position: fixed;
   }
@@ -565,9 +593,19 @@ body._touch .menu__list > li._active .menu__arrow {
     transition: left 0.3s ease 0s;
     overflow: auto;
   }
+}
+
+@media (max-width: 1182px) and (max-width: 360px) {
+  .menu__body {
+    padding: 100px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 1182px) {
   .menu__body._active {
     left: 0;
     z-index: 20;
+    overflow: hidden;
   }
   .menu__body::before {
     content: "";
@@ -625,7 +663,7 @@ body._touch .menu__list > li._active .menu__arrow {
     display: block;
   }
   .menu__link {
-    font-size: calc(14px + (24 - 14) * (100vw / 1170));
+    font-size: calc(12px + (24 - 12) * (100vw / 1170));
   }
   .menu__sub-list {
     position: relative;

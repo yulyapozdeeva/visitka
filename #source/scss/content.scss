@@ -265,7 +265,7 @@
 	}
 
 	&__photo {
-		max-width: calc(250px + (380 - 250) * (100vw / 1600));
+		max-width: calc(200px + (380 - 200) * (100vw / 1600));
 	}
 
 	// .about__word
@@ -811,6 +811,9 @@
 		}
 		@media (max-width: 380px) {
 			max-width: 270px;
+		}
+		@media (max-width: 320px) {
+			max-width: 230px;
 		}
 	}
 
@@ -1393,8 +1396,8 @@
 		@media (max-width: 992px) {
 			min-width: 100%;
 		}
-		@media (max-width: 830px) {
-			//min-width: 500px;
+		@media (max-width: 320px) {
+			max-width: 50%;
 		}
 	}
 
@@ -1412,6 +1415,9 @@
 		@media (max-width: 830px) {
 			min-width: 100%;
 		}
+		@media (max-width: 320px) {
+			max-width: 50%;
+		}
 	}
 
 	&__item-message {
@@ -1421,6 +1427,9 @@
 			min-width: 100%;
 			display: flex;
 			justify-content: center;
+		}
+		@media (max-width: 320px) {
+			max-width: 50%;
 		}
 	}
 

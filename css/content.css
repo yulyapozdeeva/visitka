@@ -254,7 +254,7 @@
       margin-bottom: 30px; } }
 
 .about__photo {
-  max-width: calc(250px + (380 - 250) * (100vw / 1600)); }
+  max-width: calc(200px + (380 - 200) * (100vw / 1600)); }
 
 .about__word {
   display: -webkit-box;
@@ -636,6 +636,9 @@
   @media (max-width: 380px) {
     .price__card {
       max-width: 270px; } }
+  @media (max-width: 320px) {
+    .price__card {
+      max-width: 230px; } }
 
 .price__card-1 {
   -webkit-transition: all 2s ease 0s;
@@ -1178,6 +1181,9 @@
     @media (max-width: 992px) {
       .form__input {
         min-width: 100%; } }
+    @media (max-width: 320px) {
+      .form__input {
+        max-width: 50%; } }
   .form__message {
     min-width: 830px;
     min-height: 147px; }
@@ -1188,6 +1194,9 @@
     @media (max-width: 830px) {
       .form__message {
         min-width: 100%; } }
+    @media (max-width: 320px) {
+      .form__message {
+        max-width: 50%; } }
   .form__item-message {
     min-width: 830px;
     margin: 0 auto; }
@@ -1200,6 +1209,9 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; } }
+    @media (max-width: 320px) {
+      .form__item-message {
+        max-width: 50%; } }
   .form__item-contacts {
     display: -webkit-box;
     display: -ms-flexbox;

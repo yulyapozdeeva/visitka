@@ -49,6 +49,7 @@
 		margin: 0px 0px 144px 0px;
 		@media (max-width: 1182px) {
 			margin: 0px 0px 30px 0px;
+			margin: 0 auto;
 		}
 	}
 
@@ -147,13 +148,16 @@
 		@media (max-width: 596px) {
 			min-height: 300px;
 		}
+		@media (max-width: 338px) {
+			min-height: 270px;
+		}
 	}
 
 	// .header__heading
 
 	&__heading {
 		color: #e9c700;
-		font-size: calc(16px + (45 - 16) * (100vw / 1600));
+		font-size: calc(15px + (45 - 15) * (100vw / 1600));
 		line-height: 150%;
 		font-weight: 700;
 		letter-spacing: 5px;
@@ -161,6 +165,9 @@
 		transition: all 2s ease 0s;
 		transform: translate(0%, -50%);
 		opacity: 0;
+		@media (max-width: 320px) {
+			//font-size: 17px;
+		}
 	}
 
 	&__heading._active {
@@ -203,6 +210,9 @@
 		@media (max-width: 1294px) {
 			margin: 0 auto;
 			min-width: 269px;
+		}
+		@media (max-width: 338px) {
+			min-width: 220px;
 		}
 	}
 
@@ -248,6 +258,9 @@
 		}
 		@media (max-width: 596px) {
 			max-width: 300px;
+		}
+		@media (max-width: 338px) {
+			max-width: 250px;
 		}
 	}
 
@@ -410,10 +423,13 @@ body._touch .menu__list > li._active .menu__arrow {
 		height: 35px;
 		cursor: pointer;
 		margin: 35px;
+		@media (max-width: 321px) {
+			margin: 35px auto;
+		}
 		//position: fixed;
 	}
 
-	.menu__icon._active{
+	.menu__icon._active {
 		position: fixed;
 	}
 	.menu__icon span,
@@ -469,10 +485,14 @@ body._touch .menu__list > li._active .menu__arrow {
 		padding: 100px 30px 30px 30px;
 		transition: left 0.3s ease 0s;
 		overflow: auto;
+		@media (max-width: 360px) {
+			padding: 100px 0px 0px 0px;
+		}
 	}
 	.menu__body._active {
 		left: 0;
 		z-index: 20;
+		overflow: hidden;
 	}
 
 	.menu__body::before {
@@ -528,7 +548,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		display: block;
 	}
 	.menu__link {
-		font-size: calc(14px + (24 - 14) * (100vw / 1170));
+		font-size: calc(12px + (24 - 12) * (100vw / 1170));
 	}
 	.menu__sub-list {
 		position: relative;
@@ -542,4 +562,3 @@ body._touch .menu__list > li._active .menu__arrow {
 		color: #000;
 	}
 }
-

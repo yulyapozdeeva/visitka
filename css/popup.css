@@ -18,6 +18,7 @@
 .popup.open {
   opacity: 1;
   visibility: visible;
+  overflow: hidden;
 }
 
 .popup.open .popup__content {
@@ -85,6 +86,13 @@
 @media (max-width: 992px) {
   .popup__close {
     right: 150px;
+  }
+}
+
+@media (max-width: 830px) {
+  .popup__close {
+    right: 0px;
+    top: -35px;
   }
 }
 

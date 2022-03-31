@@ -19,7 +19,9 @@
 .popup.open {
 	opacity: 1;
 	visibility: visible;
+	overflow: hidden;
 }
+
 .popup.open .popup__content {
 	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 	opacity: 1;
@@ -74,6 +76,10 @@
 	z-index: 45;
 	@media(max-width:992px){
 		right: 150px;
+	}
+	@media(max-width:830px){
+		right: 0px;
+		top: -35px;
 	}
 }
 .popup__title {
