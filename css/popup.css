@@ -217,6 +217,12 @@
   padding-top: 90px;
 }
 
+@media (max-width: 320px) {
+  .form__text-container-popup {
+    padding-top: 120px;
+  }
+}
+
 @media (max-width: 830px) {
   .form__body-popup {
     min-height: auto;
