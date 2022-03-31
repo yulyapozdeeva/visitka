@@ -1311,7 +1311,7 @@
 	}
 
 	&__form-wrapper {
-		max-height: 598px;
+		min-height: 598px;
 		//max-width: 1032px;
 		margin: 0 auto;
 		padding-top: 75px;
@@ -1355,7 +1355,7 @@
 		min-height: 388px;
 		justify-content: space-between;
 		max-width: 830px;
-		padding: 0px auto;
+		margin: 0px auto;
 	}
 
 	// .form__container
