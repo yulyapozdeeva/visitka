@@ -521,17 +521,9 @@ body._touch .menu__list > li._active .menu__arrow {
     width: 75px;
     height: 35px;
     cursor: pointer;
-    margin: 35px;
+    margin-top: 35px;
+    margin-left: 0px;
   }
-}
-
-@media (max-width: 1182px) and (max-width: 321px) {
-  .menu__icon {
-    margin: 35px auto;
-  }
-}
-
-@media (max-width: 1182px) {
   .menu__icon._active {
     position: fixed;
   }
@@ -587,7 +579,7 @@ body._touch .menu__list > li._active .menu__arrow {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
     padding: 100px 30px 30px 30px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
